@@ -1,0 +1,371 @@
+/*
+html5doctor.com Reset Stylesheet
+v1.6.1
+Last Updated: 2010-09-17
+Author: Richard Clark - http://richclarkdesign.com
+Twitter: @rich_clark
+*/
+
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+    margin:0;
+    padding:0;
+    border:0;
+    outline:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+body {
+    line-height:1;
+}
+
+article,aside,details,figcaption,figure,
+footer,header,hgroup,menu,nav,section {
+    display:block;
+}
+
+nav ul {
+    list-style:none;
+}
+
+blockquote, q {
+    quotes:none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content:'';
+    content:none;
+}
+
+a {
+    margin:0;
+    padding:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+/* change colours to suit your needs */
+ins {
+    background-color:#ff9;
+    color:#000;
+    text-decoration:none;
+}
+
+/* change colours to suit your needs */
+mark {
+    background-color:#ff9;
+    color:#000;
+    font-style:italic;
+    font-weight:bold;
+}
+
+del {
+    text-decoration: line-through;
+}
+
+abbr[title], dfn[title] {
+    border-bottom:1px dotted;
+    cursor:help;
+}
+
+table {
+    border-collapse:collapse;
+    border-spacing:0;
+}
+
+/* change border colour to suit your needs */
+hr {
+    display:block;
+    height:1px;
+    border:0;
+    border-top:1px solid #cccccc;
+    margin:1em 0;
+    padding:0;
+}
+
+input, select {
+    vertical-align:middle;
+}
+
+
+/* MY CODE */
+
+
+* {
+  text-decoration: none;
+}
+
+main {
+  padding-top: 100px;
+}
+
+/*STYLING THE HEADER*/
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: white;
+  width: 100%;
+  height: 100px;
+}
+
+header h1 {
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    padding: 20px 0;
+}
+
+header .header_logo {
+  font-family: Catamaran;
+  font-size: 24px;
+  font-weight: 900;
+  color: #111;
+  text-transform: uppercase;
+}
+
+header nav ul {
+  display: block;
+  margin: 0 auto;
+  width: fit-content;
+}
+
+header nav ul li {
+  display: inline-block;
+  float: left;
+  list-style: none;
+  padding: 0 16px;
+}
+
+header nav ul li a {
+  font-family: Catamaran;
+  font-size: 16px;
+  color: #111;
+  text-transform: uppercase;
+}
+
+header .header_cases {
+  display: none;
+  float: right;
+  font-family: Catamaran;
+  font-size: 16px;
+  color: #111;
+  text-transform: uppercase;
+  line-height: 38px;
+  border: 1px solid #111;
+  margin-right: 40px;
+  margin-top: 30px;
+  padding: 0 20px;
+}
+
+/*DESIGHNING FOR DESKTOP (header section)*/
+
+@media only screen and (min-width: 1000px) {
+  header h1 {
+    float: left;
+    text-align: left;
+    margin: 31px 0;
+    padding: 0 20px 0 40px;
+    border-right: 3px solid #111;
+    line-height: 38px;
+  }
+
+  header nav ul {
+    float: left;
+    margin: 20px 0 0 20px;
+  }
+
+
+  header nav ul li a {
+    display: block;
+    line-height: 60px;
+  }
+
+  header .header_cases {
+    display: block;
+  }
+}
+
+
+
+
+/*STYLING THE MAIN*/
+
+.index_banner {
+  display: table;
+  width: 100%;
+  height: calc(100vh - 100px);
+  background-image: url('img/banner.jpg');
+  background-position: center;
+  background-size: cover;
+}
+
+.vertical_center {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.index_banner h2 {
+  font-family: Catamaran;
+  font-size: 60px;
+  font-weight: 800;
+  line-height: 70px;
+  color: #fff;
+  text-align: center;
+  text-shadow: 2px 2px 8px #111;
+}
+
+.index_banner h1 {
+  font-family: Cormorant Garamond;
+  font-size: 28px;
+  font-style: italic;
+  line-height: 40px;
+  font-weight: 100;
+  color: #fff;
+  text-align: center;
+  text-shadow: 2px 2px 3px black;
+}
+
+.index_links div {
+  margin: 16px 16px 0;
+  width: calc(100% - 32px);
+  height: 100px;
+  background-color: #f2f2f2;
+}
+
+.index_links div h3 {
+  font-family: Catamaran;
+  font-size: 28px;
+  line-height: 100px;
+  font-weight: 600;
+  color: #111;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+/*DESIGHNING FOR DESKTOP (main section)*/
+
+@media only screen and (min-width: 1000px) {
+  .index_banner {
+    height: 450px;
+  }
+  .index_banner h1 {
+    display: block;
+    width: 560px;
+    margin: 0 auto;
+  }
+
+  .wrapper {
+    width: 1000px;
+    margin: 0 auto;
+  }
+
+  .index_links {
+    overflow: hidden;
+  }
+
+  .index_links div {
+    float: left;
+    margin: 20px 10px 0;
+    height: 230px;
+    background-color: #f2f2f2;
+  }
+
+  .index_links div h3 {
+    line-height: 230px;
+  }
+
+  .index_boxlink_square {
+      width: calc(25% - 20px) !important;
+  }
+  .index_boxlink_rectangle {
+    width: calc(50% - 20px) !important;
+  }
+}
+
+
+/*STYLING THE FOOTER*/
+
+
+footer {
+  display: block;
+  overflow: hidden;
+  width: calc(100%-80px);
+  padding: 40px;
+  margin-top: 20px;
+  background-color: #111;
+}
+
+footer ul {
+  float: left;
+  width: fit-content;
+  padding-left: 20px;
+}
+
+footer ul li {
+  display: block;
+  list-style: none;
+}
+
+footer ul li a {
+  font-family: Catamaran;
+  font-size: 24px;
+  color: #fff;
+  line-height: 41px;
+}
+
+.footer_links_cases {
+  display: none;
+}
+
+.footer_sm {
+  float: right;
+  width: 60px;
+}
+
+.footer_sm img {
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+/*DESIGHNING FOR DESKTOP (footer section)*/
+
+@media only screen and (min-width: 1000px) {
+  .footer_links_cases {
+    display: block;
+    text-transform: uppercase;
+    font-weight: 300;
+  }
+
+  footer ul {
+    padding-right: 30px;
+  }
+
+  footer ul li a {
+    font-size: 21px;
+  }
+
+  footer ul li p {
+    font-family: Catamaran;
+    font-size: 21px;
+    color: #fff;
+    line-height: 41px;
+  }
+
+}
